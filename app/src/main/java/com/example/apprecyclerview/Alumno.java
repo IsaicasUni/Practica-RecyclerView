@@ -1,18 +1,25 @@
 package com.example.apprecyclerview;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Alumno {
+public class Alumno implements Serializable {
+    private int id;
     private String carrera;
     private String nombre;
     private int img;
     private String matricula;
 
     public Alumno(String carrera, String nombre, int img, String matricula){
+        this.id = id;
         this.carrera = carrera;
         this.nombre = nombre;
         this.img = img;
         this.matricula = matricula;
+    }
+
+    public Alumno(){
+
     }
 
     public String getGrado(){
@@ -24,6 +31,7 @@ public class Alumno {
     public int getImg(){
         return img;
     }
+    public int getId() { return id; }
     public String getMatricula(){
         return matricula;
     }
@@ -37,6 +45,7 @@ public class Alumno {
     public void setImg(int img){
         this.img = img;
     }
+    public void setId(int id) { this.id = id; }
     public void setMatricula(String matricula){
         this.matricula = matricula;
     }
