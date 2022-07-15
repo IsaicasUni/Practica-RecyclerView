@@ -7,65 +7,68 @@ public class Alumno implements Serializable {
     private int id;
     private String carrera;
     private String nombre;
-    private int img;
+    private String img;
     private String matricula;
 
-    public Alumno(String carrera, String nombre, int img, String matricula){
-        this.id = id;
-        this.carrera = carrera;
-        this.nombre = nombre;
-        this.img = img;
-        this.matricula = matricula;
+    public Alumno(int id, String carrera, String nombre, String img, String matricula) {
+        this.setId(id);
+        this.setGrado(carrera);
+        this.setNombre(nombre);
+        this.setImg(img);
+        this.setMatricula(matricula);
     }
 
     public Alumno(){
 
     }
 
-    public String getGrado(){
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getGrado() {
         return carrera;
     }
-    public String getNombre(){
-        return nombre;
-    }
-    public int getImg(){
-        return img;
-    }
-    public int getId() { return id; }
-    public String getMatricula(){
-        return matricula;
-    }
-
-    public void setGrado(String grado){
+    public void setGrado(String grado) {
         this.carrera = grado;
     }
-    public void setNombre(String nombre){
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public void setImg(int img){
+    public String getImg() {
+        return img;
+    }
+    public void setImg(String img) {
         this.img = img;
     }
-    public void setId(int id) { this.id = id; }
-    public void setMatricula(String matricula){
+    public String getMatricula() {
+        return matricula;
+    }
+    public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
 
-    public static ArrayList<Alumno> llenarAlumnos(){
+    /*public static ArrayList<Alumno> llenarAlumnos() {
         ArrayList<Alumno> alumnos = new ArrayList<>();
         String carrera = "Ing. Tec. Información";
 
-        alumnos.add(new Alumno(carrera, "PERAZA SAINZ ANGEL ADRIAN", R.drawable.a01, "2018030155"));
-        alumnos.add(new Alumno(carrera, "GOMEZ CAMARENA JOSE RICARDO", R.drawable.a02, "2017030274"));
-        alumnos.add(new Alumno(carrera, "PEÑA SOLIS DIEGO ARMANDO", R.drawable.a03, "2017030432"));
-        alumnos.add(new Alumno(carrera, "GARCIA SILVA ADRIAN", R.drawable.a04, "2018030098"));
-        alumnos.add(new Alumno(carrera, "GARCIA RODRIGUEZ JESUS EFRAIN", R.drawable.a05, "2018030099"));
-        alumnos.add(new Alumno(carrera, "LIZARRAGA CAMACHO JESUS ARMANDO", R.drawable.a06, "2018030103"));
-        alumnos.add(new Alumno(carrera, "GARCIA GOMEZ JUAN ANTONIO", R.drawable.a07, "2018030108"));
-        alumnos.add(new Alumno(carrera, "LIZARRAGA LUNA JUAN FRANCISCO", R.drawable.a08, "2018030119"));
-        alumnos.add(new Alumno(carrera, "OSUNA HIGUERA ALEJANDRO", R.drawable.a09, "2018030121"));
-        alumnos.add(new Alumno(carrera, "MARIN GALINDO KIMBERLY VANESSA", R.drawable.a10, "2018030133"));
+        alumnos.add(new Alumno(carrera, "PERAZA SÁINZ ÁNGEL ADRIÁN", R.drawable.a01, "2017030274"));
+        alumnos.add(new Alumno(carrera, "GÓMEZ CAMARENA JOSÉ RICARDO", R.drawable.a02, "2017030432"));
+        alumnos.add(new Alumno(carrera, "PEÑA SOLÍS DIEGO ARMANDO", R.drawable.a03, "2018030098"));
+        alumnos.add(new Alumno(carrera, "GARCÍA SILVA ADRIÁN", R.drawable.a04, "2018030099"));
+        alumnos.add(new Alumno(carrera, "GARCÍA RODRÍGUEZ JESÚS EFRAÍN", R.drawable.a05, "2018030103"));
+        alumnos.add(new Alumno(carrera, "LIZÁRRAGA CAMACHO JESÚS ARMANDO", R.drawable.a06, "2018030108"));
+        alumnos.add(new Alumno(carrera, "GARCÍA GÓMEZ JUAN ANTONIO", R.drawable.a07, "2018030119"));
+        alumnos.add(new Alumno(carrera, "LIZÁRRAGA LUNA JUAN FRANCISCO", R.drawable.a08, "2018030121"));
+        alumnos.add(new Alumno(carrera, "OSUNA HIGUERA ALEJANDRO", R.drawable.a09, "2018030133"));
+        alumnos.add(new Alumno(carrera, "MARÍN GALINDO KIMBERLY VANESSA", R.drawable.a10, "2018030155"));
 
         return alumnos;
-    }
+    }*/
 
 }

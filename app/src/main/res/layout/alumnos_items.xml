@@ -34,47 +34,44 @@
                 android:paddingRight="14dp"
                 app:srcCompat="@drawable/a02">
             </ImageView>
-            
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:id="@+id/lineLay"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="2dp"
                 android:layout_toEndOf="@+id/foto"
-                android:orientation="vertical"
                 android:layout_marginLeft="4dp"
                 android:layout_toRightOf="@+id/foto">
-
                 <TextView
-                    android:id="@+id/txtAlumnoNombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/txtAlumnoNombre"
                     android:layout_marginBottom="2dp"
                     android:textColor="@color/black"
                     android:textSize="15sp"
-                    android:text="PERAZA SAINZ ANGEL ADRIAN"
+                    android:text="PERAZA SÁINZ ÁNGEL ADRIÁN"
                     android:textStyle="bold">
                 </TextView>
-                
                 <TextView
-                    android:id="@+id/txtCarrera"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
+                    android:id="@+id/txtCarrera"
+                    android:layout_marginBottom="20dp"
                     android:text="Ing. Tec. Información"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold">
                 </TextView>
-
             </LinearLayout>
 
             <TextView
-                android:id="@+id/txtMatricula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/txtMatricula"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="6dp"
                 android:layout_marginRight="6dp"
@@ -84,9 +81,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true">
             </TextView>
-
         </RelativeLayout>
-
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
